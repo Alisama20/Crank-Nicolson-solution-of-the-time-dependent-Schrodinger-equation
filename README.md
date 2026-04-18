@@ -134,3 +134,13 @@ python scripts/run_reflection.py
 Both scripts write output to `figures/` and print a summary to stdout.
 
 > **Numba JIT compilation**: the first run compiles the hot loops (~5–15 s). Subsequent runs use the cached bytecode and are significantly faster.
+
+---
+
+## Author
+
+**A. S. Amari Rabah**
+
+Developed as part of the coursework for *Mathematical and Numerical Complements* —
+Master's Degree in Physics: Radiation, Nanotechnology, Particles and Astrophysics,
+University of Granada.
