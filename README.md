@@ -77,9 +77,7 @@ At every $n_{\rm iter}$ time steps a **projective measurement** is performed: th
 - Otherwise: collapse onto the left ($\psi = 0$ for $j \geq j_R$), renormalise, continue.
 
 After $m$ measurements, $T_{\rm MC} = N_T / m$.
-
 ---
-
 ## Results
 
 ### Wave-packet evolution
@@ -101,9 +99,7 @@ The packet is almost entirely reflected; only an exponentially small fraction tu
 ![Norm](figures/wavepacket_norm.png)
 
 The Cayley scheme conserves $\|\psi\|^2$ to better than $10^{-14}$ over 1 000 steps — numerical evidence of exact unitarity.
-
 ---
-
 ### Transmission coefficient
 
 #### $T(\lambda)$ — numerical vs analytical
@@ -117,9 +113,7 @@ The Crank-Nicolson result (filled circles) matches the exact quantum-mechanical 
 ![T vs niter](figures/reflection_vs_niter.png)
 
 For very short intervals ($n_{\rm iter} \ll 1$) the Zeno effect suppresses transmission: frequent measurements prevent the wave packet from reaching the barrier. As $n_{\rm iter}$ increases the estimate converges to the unperturbed value $T_{\rm exact}$.
-
 ---
-
 ## Usage
 
 ```bash
@@ -134,9 +128,7 @@ python scripts/run_reflection.py
 Both scripts write output to `figures/` and print a summary to stdout.
 
 > **Numba JIT compilation**: the first run compiles the hot loops (~5–15 s). Subsequent runs use the cached bytecode and are significantly faster.
-
 ---
-
 ## Author
 
 **A. S. Amari Rabah**
